@@ -1,0 +1,221 @@
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --primary-color: hsl(217, 19%, 35%);
+  --secondary-color: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --white: hsl(210, 46%, 95%);
+  --font-family: "Manrope";
+  --base-font-size: 13px;
+  --base-line-height: 1.5;
+  --base-font-weight: 500;
+  --base-font-bold: 700;
+}
+body {
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  font-weight: var(--base-font-weight);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--white);
+}
+.component {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+  width: 700px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.left-content {
+  width: 220px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+}
+
+.right-content {
+  padding: 30px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+p {
+  color: var(--primary-color);
+  padding: 15px 0px 15px 0px;
+  font-weight: 400;
+}
+.author-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.author-details {
+  display: flex;
+  flex-direction: column;
+}
+.author-mini {
+  width: 40px;
+  height: 40px;
+}
+.author-name {
+  font-weight: var(--base-font-bold);
+}
+
+/*Crédits*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
